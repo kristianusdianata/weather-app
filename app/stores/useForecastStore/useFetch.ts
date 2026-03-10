@@ -41,6 +41,11 @@ export function useFetch() {
   const loading = ref<boolean>(false);
   const error = ref<unknown | null>(null);
   const forecast = ref<OpenMeteoResponse>(INIT_FORECAST);
+  /**
+   * flag to indicate that the default data has been successfully fetched
+   * to prevent double request on hydrant
+   */
+  const initialized = ref(false);
 
   async function getData({ latitude, longitude, timezone }: Coordinate) {
     const dayRange = 7;
@@ -115,7 +120,10 @@ export function useFetch() {
   }
 
   async function getDefaultData() {
+    if (initialized.value) return;
+
     await getData(INIT_COORDS);
+    initialized.value = true;
   }
 
   return {
