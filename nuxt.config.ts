@@ -14,9 +14,9 @@ export default defineNuxtConfig({
       mode: "out-in",
     },
   },
-  // nitro: {
-  //   preset: "vercel",
-  // },
+  nitro: {
+    preset: "vercel",
+  },
   css: ["@/assets/main.scss"],
   modules: ["@nuxtjs/google-fonts", "@pinia/nuxt", "@nuxt/image"],
   googleFonts: {
