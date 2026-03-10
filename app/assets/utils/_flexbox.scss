@@ -1,0 +1,24 @@
+@use "./helper" as *;
+
+@mixin flexbox(
+  $display: null,
+  $justify: null,
+  $align: null,
+  $direction: null,
+  $gap: null,
+  $wrap: null,
+  $grow: null
+) {
+  $map: (
+    display: $display,
+    justify-content: $justify,
+    align-items: $align,
+    flex-direction: $direction,
+    gap: $gap,
+    flex-wrap: $wrap,
+    flex-grow: $grow,
+  );
+
+  @include applyStyle($map);
+  @content;
+}

@@ -1,0 +1,23 @@
+@use './helper' as *;
+
+@mixin grid($cols: null, $rows: null, $gap: null, $align: null, $justify: null) {
+  $map: (
+    display: grid,
+    grid-template-columns: $cols,
+    grid-template-rows: $rows,
+    gap: $gap,
+    align-items: $align,
+    justify-items: $justify,
+  );
+
+  @include applyStyle($map);
+}
+
+@mixin grid-position($col: 0, $row: 0) {
+  $map: (
+    grid-column: $col,
+    grid-row: $row,
+  );
+
+  @include applyStyle($map);
+}

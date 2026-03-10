@@ -1,0 +1,31 @@
+@use "../utils/index" as *;
+
+@mixin underlay-slide-x(
+  $duration: 0.3s,
+  $easing: ease-in-out,
+  $underlayBackground: transparent
+) {
+  @include layout-position($position: relative);
+
+  &::before {
+    content: "";
+    @include layout-position(
+      $position: absolute,
+      $top: 0,
+      $right: 0,
+      $bottom: 0,
+      $left: 0,
+      $z-index: -1
+    );
+    @include layout-background($color: $underlayBackground);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform $duration $easing;
+  }
+}
+
+@mixin underlay-slide-x-active() {
+  &::before {
+    transform: scaleX(1);
+  }
+}

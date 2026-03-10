@@ -1,0 +1,50 @@
+@use "sass:map";
+@use "./variables" as *;
+
+:root {
+  @each $name, $value in $themes {
+    --#{$name}: #{$value};
+  }
+
+  @each $name, $value in $spacing {
+    --#{$name}: #{$value};
+  }
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--neutral-900);
+}
+
+img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+hr {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}

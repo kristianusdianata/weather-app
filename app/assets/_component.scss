@@ -1,0 +1,30 @@
+@use "./utils/index" as *;
+
+.card {
+  @include layout-spacing($padding: var(--spacing-200));
+  @include layout-size($width: 100%, $height: 100%);
+  @include layout-background($color: var(--neutral-800));
+  @include border($radius: var(--spacing-100));
+  overflow: hidden;
+}
+
+.button {
+  @include flexbox(
+    $display: inline-flex,
+    $align: center,
+    $justify: center,
+    $gap: var(--spacing-100)
+  );
+  @include layout-size($width: 100%);
+  @include layout-spacing($padding: var(--spacing-200));
+  @include border($radius: var(--spacing-100));
+  outline: none;
+}
+
+.input {
+  @include layout-spacing($padding: var(--spacing-200));
+  @include layout-size($width: 100%);
+  @include border($radius: var(--spacing-100));
+  outline: none;
+  border: none;
+}

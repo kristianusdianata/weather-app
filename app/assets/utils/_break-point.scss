@@ -1,0 +1,44 @@
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+@mixin media-query-sm() {
+  @at-root {
+    @media (min-width: $breakpoint-sm) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin media-query-md() {
+  @at-root {
+    @media (min-width: $breakpoint-md) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin media-query-lg() {
+  @at-root {
+    @media (min-width: $breakpoint-lg) {
+      & {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin media-query-xl() {
+  @at-root {
+    @media (min-width: $breakpoint-xl) {
+      & {
+        @content;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+@function px-to-em($px) {
+  $value: math.div($px, 16px) * 1em;
+  $rounded: math.div(math.round($value * 100), 100);
+  @return $rounded;
+}
+
+@function px-to-rem($px) {
+  $value: math.div($px, 16px) * 1rem;
+  $rounded: math.div(math.round($value * 100), 100);
+  @return $rounded;
+}
+
+@function px-to-percent($px) {
+  $value: math.div($px, 16px);
+  $percent: $value * 100%;
+  @return $percent;
+}

@@ -1,0 +1,36 @@
+@use "./helper" as *;
+
+@mixin border($width: null, $style: null, $color: null, $radius: null) {
+  $map: (
+    border-width: $width,
+    border-style: $style,
+    border-color: $color,
+    border-radius: $radius,
+  );
+
+  @include applyStyle($map);
+}
+
+@mixin border-bottom($width: null, $style: null, $color: null, $radius: null) {
+  $map: (
+    border-bottom-width: $width,
+    border-bottom-style: $style,
+    border-bottom-color: $color,
+    border-bottom-left-radius: $radius,
+    border-bottom-right-radius: $radius,
+  );
+
+  @include applyStyle($map);
+}
+
+@mixin border-top($width: null, $style: null, $color: null, $radius: null) {
+  $map: (
+    border-top-width: $width,
+    border-top-style: $style,
+    border-top-color: $color,
+    border-top-left-radius: $radius,
+    border-top-right-radius: $radius,
+  );
+
+  @include applyStyle($map);
+}

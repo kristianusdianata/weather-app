@@ -1,0 +1,7 @@
+@mixin applyStyle($map) {
+  @each $prop, $val in $map {
+    @if $val != null {
+      #{$prop}: #{$val};
+    }
+  }
+}

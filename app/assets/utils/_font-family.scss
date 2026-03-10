@@ -1,0 +1,12 @@
+@mixin dm-sans($weight: 300) {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+}
+
+@mixin bricolage-grotesque($weight: 700) {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-variation-settings: "wdth" 100;
+}
