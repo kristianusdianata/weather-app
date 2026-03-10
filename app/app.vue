@@ -17,11 +17,9 @@ await store.getDefaultData();
         <DropdownUnits />
       </header>
 
-      <ClientOnly>
-        <NuxtLayout>
-          <NuxtPage />
-        </NuxtLayout>
-      </ClientOnly>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </div>
   </div>
 </template>
