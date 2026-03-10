@@ -45,7 +45,7 @@ export function useFetch() {
    * flag to indicate that the default data has been successfully fetched
    * to prevent double request on hydrant
    */
-  const initialized = ref(false);
+  const initialized = ref<boolean>(false);
 
   async function getData({ latitude, longitude, timezone }: Coordinate) {
     const dayRange = 7;
