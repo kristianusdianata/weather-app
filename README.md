@@ -1,4 +1,6 @@
-# Weather App
+# Responsive Weather App
+
+![Weather App Screenshot](./public/weather-app-design.jpeg)
 
 A modern weather application built to explore **frontend architecture patterns**, **headless UI design**, and **efficient API handling**.
 
@@ -16,6 +18,10 @@ Instead of focusing only on features, this project explores several engineering 
 - implementing **client-side caching**
 
 The goal was to keep the system **predictable, maintainable, and efficient**, even for a relatively small application.
+
+## API / Data Source
+
+This app fetches weather data from the Open-Meteo public API, which provides free and reliable weather forecasts without requiring an API key. You can find more information at [Open-Meteo](https://open-meteo.com/).
 
 ## Live Demo
 
