@@ -1,4 +1,4 @@
-# Responsive Weather App
+# Interactive Weather Dashboard with Headless UI Components
 
 ![Weather App Screenshot](./public/weather-app-design.jpeg)
 
