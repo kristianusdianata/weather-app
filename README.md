@@ -2,7 +2,7 @@
 
 ![Weather App Screenshot](./public/weather-app-design.jpeg)
 
-A modern weather application built to explore **frontend architecture patterns**, **headless UI design**, and **efficient API handling**.
+A modern weather application built to explore **frontend architecture patterns**, **headless UI design**, and **efficient API handling**, based on the Weather app challenge from [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-weather-app-SWeEyfyfKa).
 
 This project focuses on building a responsive and accessible weather interface while maintaining clean data flow and preventing unnecessary API requests.
 
